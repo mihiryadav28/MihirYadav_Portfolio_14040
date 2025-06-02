@@ -13,8 +13,8 @@ $(document).ready(function () {
 
 
 
-  const namePattern = /^[A-Za-z ]{2,50}$/;
-  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const namePattern = new RegExp("^[A-Za-z ]{2,50}$")
+  const emailPattern = new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$");
 
 nameele.keyup(validateName).blur(validateName);
 emailele.keyup(validateEmail).blur(validateEmail);
